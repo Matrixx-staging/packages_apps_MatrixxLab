@@ -20,7 +20,7 @@
     android:title="@string/matrixx_lab_title">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="personalization_dashboard_quick_access"
+        android:key="matrixx_dashboard_quick_access"
         android:layout="@layout/matrixx_dashboard_layout"
         android:selectable="false"/>
 </PreferenceScreen>
