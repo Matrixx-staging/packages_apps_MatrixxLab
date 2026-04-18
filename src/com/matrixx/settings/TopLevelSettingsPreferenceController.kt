@@ -16,15 +16,20 @@
 
 package com.matrixx.settings
 
-import android.content.Context
-import com.android.settings.core.BasePreferenceController
+import android.content.Context;
 
-class TopLevelSettingsPreferenceController(
-    context: Context,
-    preferenceKey: String
-) : BasePreferenceController(context, preferenceKey) {
+import com.android.settings.R;
+import com.android.settings.core.BasePreferenceController;
 
-    override fun getAvailabilityStatus(): Int {
-        return AVAILABLE
+public class TopLevelSettingsPreferenceController extends BasePreferenceController {
+
+    public TopLevelSettingsPreferenceController(Context context,
+            String preferenceKey) {
+        super(context, preferenceKey);
+    }
+
+    @Override
+    public int getAvailabilityStatus() {
+        return AVAILABLE;
     }
 }
